@@ -11,7 +11,7 @@ FROM resin/rpi-raspbian:jessie
 # Set our working directory
 WORKDIR /usr/src/app
 RUN apt-get update
-RUN apt-get install vim gem
+RUN apt-get install vim gem systemd
 # Copy requirements.txt first for better cache on later pushes
 #COPY ./requirements.txt /requirements.txt
 
